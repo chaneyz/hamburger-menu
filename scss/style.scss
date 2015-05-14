@@ -1,0 +1,37 @@
+a.hamburger {
+  content: "  ";
+  width: 24px;
+  background: black;
+  height: 3px;
+  display: block;
+}
+
+span {
+  background: black;
+  width: 24px;
+  height: 3px;
+  display: block;
+  margin: 4px 0 4px 0;
+}
+
+a.hamburger::before, a.hamburger::after {
+  content:" ";
+  width: 24px;
+  background: black;
+  height: 3px;
+  display: block;
+}
+
+a ~ span {
+  height: 100%;
+  margin-left: 100px;
+  background: black;
+
+}
+
+input[type="checkbox"]:checked {
+  display: block;
+  width: 1px;
+  height: 1px;
+
+}
